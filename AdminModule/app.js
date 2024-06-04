@@ -29,8 +29,12 @@ app.use(session({
 }))
 
 
+//Invocamos al Modulo de Conexion de Base de Datos
+const connection = require('./database/db');
+
+//Estableciendo las Rutas
 app.get('/',(req, res) =>{
-    res.send('Hola Mundo');
+    res.render('index', {msg: 'Esto es un mensaje desde Node'});
 } )
 
 app.listen(3000,(req, res) =>{

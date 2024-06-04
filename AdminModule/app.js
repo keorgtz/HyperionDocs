@@ -34,9 +34,15 @@ const connection = require('./database/db');
 
 //Estableciendo las Rutas
 app.get('/',(req, res) =>{
-    res.render('index', {msg: 'Esto es un mensaje desde Node'});
+    res.render('index.ejs', {msg: 'Esto es un mensaje desde Node'});
 } )
 
+app.get('/login', (req, res)=>{
+    res.render('login.ejs');
+})
+
+
+//Inicializando el Servidor de NodeJS con ExpressJS
 app.listen(3000,(req, res) =>{
     console.log('SERVER RUNNING IN http://localhost:3000');
 })

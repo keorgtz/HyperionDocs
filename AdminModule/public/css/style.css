@@ -1,0 +1,16 @@
+body{
+  background-color: rgb(72, 72, 72);
+  font-family: 'Times New Roman';
+  margin: auto;
+  text-align: center;
+}
+.login-form, .contenedor {
+  width: 300px;
+  margin-top: auto;
+}
+.login-form h1{
+    text-align: center;
+    color: midnightblue;
+    font-size: 1.5rem;
+    padding: 70px 0 10px;
+}
